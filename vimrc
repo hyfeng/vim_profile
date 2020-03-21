@@ -13,6 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 "plugins+++++++"
 
 Plugin 'vim-scripts/taglist.vim'
+
+Plugin 'vim-scripts/OmniCppComplete'
+
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'Xuyuanp/nerdtree-git-plugin'
 
@@ -29,6 +32,17 @@ call vundle#end()            " required
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 0
 let Tlist_Auto_Open = 1
+
+"omincpp setting
+set completeopt=menu,menuone  
+let OmniCpp_MayCompleteDot=1    "  打开  . 操作符
+let OmniCpp_MayCompleteArrow=1  "打开 -> 操作符
+let OmniCpp_MayCompleteScope=1  "打开 :: 操作符
+let OmniCpp_NamespaceSearch=1   "打开命名空间
+let OmniCpp_GlobalScopeSearch=1  
+let OmniCpp_DefaultNamespace=["std"]  
+let OmniCpp_ShowPrototypeInAbbr=1  "打开显示函数原型
+let OmniCpp_SelectFirstItem=2   "自动弹出时自动跳至第一个
 
 
 
