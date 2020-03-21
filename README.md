@@ -7,4 +7,4 @@
 增加新插件， 在vimrc中 增加Plugin 'github 路径，参照taglist'  ; 使用搜索引擎搜索vundle 插件管理 能获得一切
 
 tags生成
-https://github.com/hyfeng/vim_profile.git
+ctags -R --fields=+iaS --extra=+q --c++-kinds=+p
